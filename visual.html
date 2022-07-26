@@ -18,30 +18,13 @@
             t++;
         }
         function pageChange(clicked_Id) {
-            if (clicked_Id==1){
-                var pageoff = document.getElementsByClassName("paging")[0];
+            var i;
+            for (i=0; i<4;i++){
+                var pageoff = document.getElementsByClassName("paging")[i];
                 pageoff.style.backgroundPosition = "0 0";
-                var change = document.getElementById("1")
-                change.style.backgroundPosition = "0 -13px";
             }
-            else if (clicked_Id==2){
-                var pageoff = document.getElementsByClassName("paging")[0];
-                pageoff.style.backgroundPosition = "0 0";
-                var change = document.getElementById("2")
-                change.style.backgroundPosition = "0 -13px";
-            }
-            else if (clicked_Id==3){
-                var pageoff = document.getElementsByClassName("paging")[0];
-                pageoff.style.backgroundPosition = "0 0";
-                var change = document.getElementById("3")
-                change.style.backgroundPosition = "0 -13px";
-            }
-            else if (clicked_Id==4){
-                var pageoff = document.getElementsByClassName("paging")[0];
-                pageoff.style.backgroundPosition = "0 0";
-                var change = document.getElementById("4")
-                change.style.backgroundPosition = "0 -13px";
-            }
+            var change = document.getElementById(clicked_Id)
+            change.style.backgroundPosition = "0 -13px";
         }
     </script>
     <title>visualHYWU</title>

@@ -18,7 +18,15 @@
             }
             t++;
         }
-
+        function pageChange(clicked_Id) {
+            var i;
+            for (i=0; i<4;i++){
+                var pageoff = document.getElementsByClassName("paging")[i];
+                pageoff.style.backgroundPosition = "0 0";
+            }
+            var change = document.getElementById(clicked_Id)
+            change.style.backgroundPosition = "0 -13px";
+        }
     </script>
     <title>HYWU</title>
 </head>
@@ -56,16 +64,13 @@
                 </div>
               
                 <p id="visual_paging">
-                    <a class="paging" type="radio" href="#slide-1"> Slide 1 </a>
-                    <a class="paging" type="radio" href="#slide-2"> Slide 2 </a>
-                    <a class="paging" type="radio" href="#slide-3"> Slide 3 </a>
-                    <a class="paging" type="radio" href="#slide-4"> Slide 4 </a>
+                    <a class="paging" id="1" href="#slide-1" onclick="pageChange(this.id)"> Slide 1 </a>
+                    <a class="paging" id="2" href="#slide-2" onclick="pageChange(this.id)"> Slide 2 </a>
+                    <a class="paging" id="3" href="#slide-3" onclick="pageChange(this.id)"> Slide 3 </a>
+                    <a class="paging" id="4" href="#slide-4" onclick="pageChange(this.id)"> Slide 4 </a>
                     <button id="s_p" onclick="stop_play()">Stop</button>
                 </p>
-                
             </div>
-              
-    
             <div id="mainschedule">
     
             </div>
