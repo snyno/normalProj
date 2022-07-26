@@ -1,0 +1,83 @@
+
+body {
+    background-color: aqua;
+    margin-top:26px;
+}
+
+#visual_paging {
+    position: absolute;
+    left: 45px;
+    bottom: 45px;
+    text-align: left;
+    z-index: 101;
+    margin: 0;
+}
+#visual_paging a{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 9px;
+    background: url(./img/visual/btn/visual_paging.png) no-repeat;
+    font-size: 10px;
+    vertical-align: top;
+    text-indent: -9999px;
+}
+#visual_paging button {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(./img/visual/btn/visual_stop.png) no-repeat;
+    font-size: 10px;
+    vertical-align: top;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+.contents {
+    margin-left: 190px;
+}
+
+.slider {
+    position: relative;
+    margin-left: 30px;
+}
+.slides {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 1180px;
+    height: 440px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.01s;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+
+.slides img {
+    position: absolute;
+}
+
+.slider  a {
+    justify-content: center;
+    position: relative;
+}

@@ -1,0 +1,112 @@
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 26px;
+    background: #00467f;
+    z-index: 600;
+}
+#hywu {
+    margin: 0 14px ;
+    display:inline-block;
+    color: white;
+    font-size:12px;
+}
+p {
+    margin: 0;
+    color: white;
+    font-size:12px;
+    display:inline-block;
+}
+body {
+    margin: 0;
+}
+
+._KR {
+    background : url("./img/KR.png") no-repeat 0 5px;
+}
+._EN {
+    background : url("./img/EN.png") no-repeat 0 5px;
+}
+._CH {
+    background : url("./img/CH.png") no-repeat 0 5px;
+}
+._KR, ._CH, ._EN {
+    line-height: 24px;
+    padding: 0 12px 0 21px;
+    display:inline-block;
+    color:#80a3bf;
+}
+.top > p:hover{
+    color: #fff;
+}
+
+
+#right_div {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 24px;
+}
+#dd1 > a {
+    display: inline-block;
+    height: 26px;
+    line-height: 24px;
+    margin-left: 2px;
+}
+#dd1 {
+    margin-right: 10px;
+    position: relative;
+    line-height: 24px;
+}
+#dd1 > a {
+    width: 15px;
+    padding: 0;
+    font-size: 0;
+    vertical-align: top;
+}
+
+.blog {
+    background : url("img/sns_blog.png") no-repeat center 6px;
+}
+.facebook {
+    background : url("img/sns_facebook.png") no-repeat center 6px;
+}
+.instag {
+    background : url("img/sns_instagram.png") no-repeat center 6px;
+}
+
+
+#home{
+    background : url("img/home.png") no-repeat 0 7px;
+}
+#login {
+    background : url("img/login.png") no-repeat 0 7px;
+}
+#sitemap {
+    background : url("img/sitemap.png") no-repeat 0 7px;
+}
+
+#dd2 > a {
+    color: #fff;
+    padding: 0 10px 0 20px;
+    height: 26px;
+    line-height: 24px;
+    margin-left: 2px;
+    font-size:12px;
+    display: inline-block;
+}
+
+#dd2 {
+    /* padding : 0 0 0 0;
+    margin : 0 0 0 0;
+    border : 1px solid red; */
+    /* position: absolute; */
+    position : relative;
+    left : 10px;
+    height: 26px;
+}
+a {
+    text-decoration: none;
+}

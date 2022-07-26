@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="visual.css">
+    <script>
+        var t = 0;
+        function stop_play() {
+            var s_p = document.getElementById("s_p");
+            if (t%2==0) {
+                s_p.style.backgroundImage= "url('./img/visual/btn/visual_play.png')";
+            }
+            else {
+                s_p.style.backgroundImage="url('./img/visual/btn/visual_stop.png')";
+            }
+            t++;
+        }
+
+    </script>
+    <title>HYWU</title>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <p id="hywu" style="cursor: pointer;" onclick="location.href='main.html'">한양여자대학교</p>
+            <p class="_KR" style="cursor: pointer; color: white;" onclick="location.href='main.html'">KR</p>
+            <p class="_EN" style="cursor: pointer;" onclick="location.href='main_EN.html'">EN</p>
+            <p class="_CH" style="cursor: pointer;" onclick="location.href='main_CH.html'">CH</p>
+            
+            <span id="right_div">
+                <p id="dd1">
+                    <a class="facebook" href="https://www.facebook.com/hywoman" target="_blank" title="페이스북은 새창으로 열립니다">페이스북</a>
+                    <a class="instag" href="https://www.instagram.com/hywoman_university/" target="_blank" title="인스타그램은 새창으로 열립니다.">인스타그램</a>
+                    <a class="blog" href="https://blog.naver.com/hyw_univ" target="_blank" title="네이버블로그은 새창으로 열립니다.">네이버 블로그</a>                        
+                </p>
+                <p id="dd2">
+                    <a id="home" href="main.html">Home</a>
+                    <a id="login" href="https://sso.hywoman.ac.kr/svc/tk/Auth.do?id=WWW&ac=Y&RelayState=%2Fko%2Findex.do&ifa=N&">로그인</a>
+                    <a id="sitemap" href="javascript:isSiteMapMovePage();">사이트맵</a>
+                </p>
+            </span>
+            
+        </div>
+    </header>
+    <content>
+        <div class="contents">
+            <div class="slider">
+                <div class="slides">
+                  <div id="slide-1"><img src="./img/visual/1652061776349.jpg" alt=""></div>
+                  <div id="slide-2"><img src="./img/visual/1652317087115.jpg" alt=""></div>
+                  <div id="slide-3"><img src="./img/visual/1652319683114.jpg" alt=""></div>
+                  <div id="slide-4"><img src="./img/visual/1652338159118.jpg" alt=""></div>
+                </div>
+              
+                <p id="visual_paging">
+                    <a class="paging" type="radio" href="#slide-1"> Slide 1 </a>
+                    <a class="paging" type="radio" href="#slide-2"> Slide 2 </a>
+                    <a class="paging" type="radio" href="#slide-3"> Slide 3 </a>
+                    <a class="paging" type="radio" href="#slide-4"> Slide 4 </a>
+                    <button id="s_p" onclick="stop_play()">Stop</button>
+                </p>
+                <script id="visualListTemplate" type="text/x-jquery-tmpl">
+                    <li>
+                        <img src="{%= VISUAL_PATH_0 %}" alt="{%= VISUAL_CN %}" />
+                        <span>
+                            <img src="{%= VISUAL_PATH_1 %}" alt="{%= VISUAL_CN %}" />
+                        </span>
+                    </li>
+                </script>
+            </div>
+              
+    
+            <div id="mainschedule">
+    
+            </div>
+        </div>
+    </content>    
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
