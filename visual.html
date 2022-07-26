@@ -17,7 +17,32 @@
             }
             t++;
         }
-
+        function pageChange(clicked_Id) {
+            if (clicked_Id==1){
+                var pageoff = document.getElementsByClassName("paging")[0];
+                pageoff.style.backgroundPosition = "0 0";
+                var change = document.getElementById("1")
+                change.style.backgroundPosition = "0 -13px";
+            }
+            else if (clicked_Id==2){
+                var pageoff = document.getElementsByClassName("paging")[0];
+                pageoff.style.backgroundPosition = "0 0";
+                var change = document.getElementById("2")
+                change.style.backgroundPosition = "0 -13px";
+            }
+            else if (clicked_Id==3){
+                var pageoff = document.getElementsByClassName("paging")[0];
+                pageoff.style.backgroundPosition = "0 0";
+                var change = document.getElementById("3")
+                change.style.backgroundPosition = "0 -13px";
+            }
+            else if (clicked_Id==4){
+                var pageoff = document.getElementsByClassName("paging")[0];
+                pageoff.style.backgroundPosition = "0 0";
+                var change = document.getElementById("4")
+                change.style.backgroundPosition = "0 -13px";
+            }
+        }
     </script>
     <title>visualHYWU</title>
 </head>
@@ -32,23 +57,13 @@
             </div>
           
             <p id="visual_paging">
-                <a class="paging" type="radio" href="#slide-1"> Slide 1 </a>
-                <a class="paging" type="radio" href="#slide-2"> Slide 2 </a>
-                <a class="paging" type="radio" href="#slide-3"> Slide 3 </a>
-                <a class="paging" type="radio" href="#slide-4"> Slide 4 </a>
+                <a class="paging" id="1" href="#slide-1" onclick="pageChange(this.id)"> Slide 1 </a>
+                <a class="paging" id="2" href="#slide-2" onclick="pageChange(this.id)"> Slide 2 </a>
+                <a class="paging" id="3" href="#slide-3" onclick="pageChange(this.id)"> Slide 3 </a>
+                <a class="paging" id="4" href="#slide-4" onclick="pageChange(this.id)"> Slide 4 </a>
                 <button id="s_p" onclick="stop_play()">Stop</button>
             </p>
-            <script id="visualListTemplate" type="text/x-jquery-tmpl">
-                <li>
-                    <img src="{%= VISUAL_PATH_0 %}" alt="{%= VISUAL_CN %}" />
-                    <span>
-                        <img src="{%= VISUAL_PATH_1 %}" alt="{%= VISUAL_CN %}" />
-                    </span>
-                </li>
-            </script>
         </div>
-          
-
         <div id="mainschedule">
 
         </div>
