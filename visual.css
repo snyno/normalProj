@@ -49,15 +49,10 @@
     position: relative;
     display: flex;
     overflow: hidden;
-    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
 
-.slides::-webkit-scrollbar-track {
-    background: transparent;
-}
 .slides > div {
-    scroll-snap-align: start;
     flex-shrink: 0;
     width: 1180px;
     height: 440px;
